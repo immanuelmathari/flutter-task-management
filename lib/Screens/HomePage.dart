@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:taskmanagement/Screens/profilepage.dart';
 import 'package:taskmanagement/widgets/constants.dart';
+import 'package:taskmanagement/widgets/premium.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _MyHomePageState extends State<MyHomePage> {
   List<Widget> _pages = [
     HomePage(),
     ProfilePage(),
-  ]
+  ];
   int activeIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -68,6 +70,7 @@ class _HomePageState extends State<HomePage> {
         child: Icon(Icons.add, color: klightgrey, size: 30),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      body: _pages[activeIndex],
     );
   }
 }
@@ -108,4 +111,22 @@ AppBar _buildAppBar()
       ),
     ]
   );
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: const [
+        Padding(
+          padding: const EdgeInsets.only(right: 0.0, left: 0.0, top: 15.0),
+          child: GoPremium(),
+        ),
+
+      ]
+    );
+  }
 }
