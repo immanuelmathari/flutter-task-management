@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:taskmanagement/Screens/profilepage.dart';
 import 'package:taskmanagement/widgets/constants.dart';
 import 'package:taskmanagement/widgets/premium.dart';
+import 'package:taskmanagement/widgets/tasks.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -136,7 +137,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        Expanded(child: Container())
+        Expanded(child: Tasks())
 
       ],
     );
