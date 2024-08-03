@@ -81,8 +81,7 @@ class Tasks extends StatelessWidget {
                     //     )
                     // )
                     _buildTaskStatus(kwhite, taskList.iconColor!, '${taskList.done} done' ),
-
-                  ]
+                 ]
               )
             ]
         )
