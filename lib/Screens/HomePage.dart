@@ -118,15 +118,27 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
+      children: [
         Padding(
-          padding: const EdgeInsets.only(right: 0.0, left: 0.0, top: 15.0),
+          padding: const EdgeInsets.only(right: 0.0, left: 0.0, top: 10.0),
           child: GoPremium(),
         ),
+        Container(
+          padding: const EdgeInsets.all(15),
+          child: Text(
+            'Tasks',
+            style: TextStyle(
+              color: Colors.grey.shade600,
+              fontSize: 22,
+              fontWeight: FontWeight.bold
+            ),
+          ),
+        ),
+        Expanded(child: Container())
 
-      ]
+      ],
     );
   }
 }
