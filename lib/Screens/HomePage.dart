@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:taskmanagement/Screens/MenuPage.dart';
 import 'package:taskmanagement/Screens/profilepage.dart';
 import 'package:taskmanagement/widgets/constants.dart';
 import 'package:taskmanagement/widgets/premium.dart';
@@ -20,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _buildAppBar(),
+      appBar: _buildAppBar(context),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.only(
@@ -76,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-AppBar _buildAppBar()
+AppBar _buildAppBar(BuildContext context)
 {
   return AppBar(
     backgroundColor: kwhite,
@@ -108,7 +109,12 @@ AppBar _buildAppBar()
           color: Colors.grey.shade600,
           size: 35,
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context as BuildContext,
+              MaterialPageRoute(
+                  builder: (context) => menuPage()));
+        },
       ),
     ]
   );

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'customText.dart';
 
-Widget upperHeader(String text, BuildContext context, bool isIcon, required Widget page) {
+// Widget upperHeader(String text, BuildContext context, bool isIcon, required Widget page) {
+Widget upperHeader(String text, BuildContext context, bool isIcon, Widget page) {
   var he = MediaQuery.of(context).size.height;
 
   return Padding(padding: EdgeInsets.only(top: he*0.03),
@@ -17,7 +18,7 @@ Widget upperHeader(String text, BuildContext context, bool isIcon, required Widg
       customText(text, 28),
       // whatever space is left is taken
       Expanded(child: Container()),
-      // isIcon ? Icons.mail_outline_rounded : Container(),
+      isIcon ? Icon(Icons.search, color: Colors.black, size: 30) : Container()
     ],
   ),
   );
