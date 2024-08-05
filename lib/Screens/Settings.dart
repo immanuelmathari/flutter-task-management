@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:taskmanagement/Screens/MenuPage.dart';
+import 'package:taskmanagement/Screens/privacySecurity.dart';
 import 'package:taskmanagement/components/customText.dart';
 import 'package:taskmanagement/components/upper_header.dart';
 import 'package:taskmanagement/widgets/constants.dart';
@@ -122,12 +123,42 @@ class _settingsPageState extends State<settingsPage> {
                     "Sounds",
                     style: TextStyle(fontSize: 18, color: MyThemeColor.textColor),
                   ),
+                  // expanded means it will take up all the spaces init
                   Expanded(child: Container()),
                   CupertinoSwitch(value: isSound, onChanged: (bool value) {
                     setState(() {
                       isSound = value;
                     });
                   })
+                ],
+              ),
+              SizedBox(
+                height: he * 0.025,
+              ),
+              Row(
+                children: [
+                  if(isSwitched == true)
+                    Icon(Icons.notifications_active_outlined,
+                    size: 25, color: MyThemeColor.textColor)
+                  else
+                    Icon(Icons.notifications_off_outlined,
+                    size: 25, color: MyThemeColor.textColor),
+                  SizedBox(
+                    width: he * 0.015,
+                  ),
+                  const Text(
+                    "Notifications",
+                    style: TextStyle(fontSize: 18, color: MyThemeColor.textColor),
+                  ),
+                  Expanded(child: Container()),
+                  CupertinoSwitch(
+                    value: isSwitched,
+                    onChanged: (bool value) {
+                      setState(() {
+                        isSwitched = value;
+                      });
+                    }
+                  )
                 ],
               ),
               SizedBox(
@@ -149,7 +180,7 @@ class _settingsPageState extends State<settingsPage> {
                     const Text(
                       "Privacy & Security",
                       style: TextStyle(
-                        fontSize: 10, color: MyThemeColor.textColor
+                        fontSize: 18, color: MyThemeColor.textColor
                       ),
                     ),
                     Expanded(child: Container()),

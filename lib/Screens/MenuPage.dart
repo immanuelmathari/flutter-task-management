@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:taskmanagement/Screens/HomePage.dart';
+import 'package:taskmanagement/Screens/Settings.dart';
 
 class menuPage extends StatefulWidget{
   const menuPage({super.key});
@@ -54,7 +55,17 @@ class _menuPageState extends State<menuPage> {
             SizedBox(
               height: he * 0.03,
             ),
-            Text('Settings', style: TextStyle(fontSize: 20)),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                MaterialPageRoute(
+                  builder: (context) =>  settingsPage(),
+                )
+                );
+              },
+              child: Text('Settings', style: TextStyle(fontSize: 20)),
+
+            ),
             SizedBox(
               height: he * 0.03,
             ),
