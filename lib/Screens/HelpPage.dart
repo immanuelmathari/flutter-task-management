@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:taskmanagement/Screens/HomePage.dart';
 import 'package:taskmanagement/Screens/MenuPage.dart';
 import 'package:taskmanagement/components/upper_header.dart';
-import 'package:taskmanagement/components/customText.dart';
 import 'package:taskmanagement/Screens/privacySecurity.dart';
 
 class HelpPage extends StatelessWidget {
