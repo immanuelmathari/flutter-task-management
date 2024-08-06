@@ -22,6 +22,104 @@ class _ProfilePageState extends State<ProfilePage> {
             // everythin we need
             children: [
               SizedBox(
+                height: 0.0001,
+              ),
+              Text(
+                  'Username',
+                  style: TextStyle(
+                      color: Colors.grey[600],
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold
+                  )
+              ),
+              Row(
+                  children: [
+                    SizedBox(
+                        height: he * 0.045,
+                        width: he * 0.25,
+                        child: TextFormField(
+                            decoration: InputDecoration(
+                                contentPadding: const EdgeInsets.only(left: 10, top: 12),
+                                hintText: 'Mathari Immanuel',
+                                hintStyle: TextStyle(
+                                  color: Colors.grey[600],
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                ),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                )
+                            )
+                        )
+                    ),
+                    Expanded(
+                      child: Container(),
+                    ),
+                    TextButton(
+                      onPressed: (){},
+                      child: Text('Change User name', style: TextStyle(color: Colors.blueAccent))
+                    ),
+                  ]
+              ),
+              SizedBox(
+                height: 0.0001,
+              ),
+              Text(
+                  'Username',
+                  style: TextStyle(
+                      color: Colors.grey[600],
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold
+                  )
+              ),
+              Row(
+                  children: [
+                    SizedBox(
+                        height: he * 0.045,
+                        width: he * 0.25,
+                        child: TextFormField(
+                            decoration: InputDecoration(
+                                contentPadding: const EdgeInsets.only(left: 10, top: 12),
+                                hintText: 'Mathari Immanuel',
+                                hintStyle: TextStyle(
+                                  color: Colors.grey[600],
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                ),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                )
+                            )
+                        )
+                    ),
+                    Expanded(
+                      child: Container(),
+                    ),
+                    TextButton(
+                        onPressed: (){},
+                        child: Text('Change User name', style: TextStyle(color: Colors.blueAccent))
+                    ),
+                  ]
+              ),
+              SizedBox(
                 height: 30,
               ),
               Text('First Name', style: TextStyle(
@@ -94,50 +192,8 @@ class _ProfilePageState extends State<ProfilePage> {
                       borderSide: const BorderSide(color: MyThemeColor.textColor)
                     ),
                   )
-                )
+                ),
               ),
-              SizedBox(
-                height: he * 0.02,
-              ),
-              Text(
-                'Username',
-                style: TextStyle(
-                  color: Colors.grey[600],
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold
-                )
-              ),
-              Row(
-                children: [
-                  SizedBox(
-                    height: he * 0.045,
-                    width: he * 0.25,
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                        contentPadding: const EdgeInsets.only(left: 10, top: 12),
-                        hintText: 'Mathari Immanue',
-                        hintStyle: TextStyle(
-                          color: Colors.grey[600],
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: const BorderSide(color: MyThemeColor.textColor),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: const BorderSide(color: MyThemeColor.textColor),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: const BorderSide(color: MyThemeColor.textColor),
-                        )
-                      )
-                    )
-                  )
-                ]
-              )
             ]
           )
         )
