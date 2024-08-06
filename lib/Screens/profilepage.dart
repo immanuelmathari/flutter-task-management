@@ -22,105 +22,7 @@ class _ProfilePageState extends State<ProfilePage> {
             // everythin we need
             children: [
               SizedBox(
-                height: 0.0001,
-              ),
-              Text(
-                  'Username',
-                  style: TextStyle(
-                      color: Colors.grey[600],
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold
-                  )
-              ),
-              Row(
-                  children: [
-                    SizedBox(
-                        height: he * 0.045,
-                        width: he * 0.25,
-                        child: TextFormField(
-                            decoration: InputDecoration(
-                                contentPadding: const EdgeInsets.only(left: 10, top: 12),
-                                hintText: 'Mathari Immanuel',
-                                hintStyle: TextStyle(
-                                  color: Colors.grey[600],
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
-                                ),
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
-                                )
-                            )
-                        )
-                    ),
-                    Expanded(
-                      child: Container(),
-                    ),
-                    TextButton(
-                      onPressed: (){},
-                      child: Text('Change User name', style: TextStyle(color: Colors.blueAccent))
-                    ),
-                  ]
-              ),
-              SizedBox(
-                height: 0.0001,
-              ),
-              Text(
-                  'Username',
-                  style: TextStyle(
-                      color: Colors.grey[600],
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold
-                  )
-              ),
-              Row(
-                  children: [
-                    SizedBox(
-                        height: he * 0.045,
-                        width: he * 0.25,
-                        child: TextFormField(
-                            decoration: InputDecoration(
-                                contentPadding: const EdgeInsets.only(left: 10, top: 12),
-                                hintText: 'Mathari Immanuel',
-                                hintStyle: TextStyle(
-                                  color: Colors.grey[600],
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
-                                ),
-                                enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
-                                )
-                            )
-                        )
-                    ),
-                    Expanded(
-                      child: Container(),
-                    ),
-                    TextButton(
-                        onPressed: (){},
-                        child: Text('Change User name', style: TextStyle(color: Colors.blueAccent))
-                    ),
-                  ]
-              ),
-              SizedBox(
-                height: 30,
+                height: 10,
               ),
               Text('First Name', style: TextStyle(
                 color: Colors.grey[600],
@@ -169,7 +71,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 height: he * 0.01,
               ),
               SizedBox(
-                height: he * 0.45,
+                height: he * 0.045,
                 child: TextFormField(
                   decoration: InputDecoration(
                     contentPadding: const EdgeInsets.only(left: 10, top: 12),
@@ -194,10 +96,233 @@ class _ProfilePageState extends State<ProfilePage> {
                   )
                 ),
               ),
-            ]
+              SizedBox(
+                height: 0.0001,
+              ),
+              Text(
+                  'Username',
+                  style: TextStyle(
+                      color: Colors.grey[600],
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold
+                  )
+              ),
+              Row(
+                  children: [
+                    SizedBox(
+                        height: he * 0.045,
+                        width: he * 0.20,
+                        child: TextFormField(
+                            decoration: InputDecoration(
+                                contentPadding: const EdgeInsets.only(left: 10, top: 12),
+                                hintText: 'Mathari Immanuel',
+                                hintStyle: TextStyle(
+                                  color: Colors.grey[600],
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                ),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                )
+                            )
+                        )
+                    ),
+                    Expanded(
+                      child: Container(),
+                    ),
+                    TextButton(
+                        onPressed: (){},
+                        child: Text('Change User name', style: TextStyle(color: Colors.blueAccent))
+                    ),
+                    Icon(Icons.edit, color: Colors.blueAccent,size: 22)
+                  ]
+              ),
+              SizedBox(
+                height: 0.0001,
+              ),
+              Text(
+                  'Phone Number',
+                  style: TextStyle(
+                      color: Colors.grey[600],
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold
+                  )
+              ),
+
+              Row(
+                  children: [
+                    SizedBox(
+                        height: he * 0.045,
+                        width: he * 0.25,
+                        child: TextFormField(
+                            decoration: InputDecoration(
+                                contentPadding: const EdgeInsets.only(left: 10, top: 12),
+                                hintText: '+254797952810',
+                                hintStyle: TextStyle(
+                                  color: Colors.grey[600],
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                ),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                )
+                            )
+                        )
+                    ),
+                    Expanded(
+                      child: Container(),
+                    ),
+                    TextButton(
+                        onPressed: (){},
+                        child: Text('Change Number', style: TextStyle(color: Colors.blueAccent))
+                    ),
+                    Icon(Icons.edit, color: Colors.blueAccent,size: 22)
+                  ]
+              ),
+              SizedBox(
+                height: 0.0001,
+              ),
+              Text(
+                  'Email',
+                  style: TextStyle(
+                      color: Colors.grey[600],
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold
+                  )
+              ),
+
+              Row(
+                  children: [
+                    SizedBox(
+                        height: he * 0.045,
+                        width: he * 0.25,
+                        child: TextFormField(
+                            decoration: InputDecoration(
+                                contentPadding: const EdgeInsets.only(left: 10, top: 12),
+                                hintText: 'immanuelmathari@gmail.com',
+                                hintStyle: TextStyle(
+                                  color: Colors.grey[600],
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                ),
+                                focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                ),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                  borderSide: const BorderSide(color: MyThemeColor.textColor),
+                                )
+                            )
+                        )
+                    ),
+                    Expanded(
+                      child: Container(),
+                    ),
+                    TextButton(
+                        onPressed: (){},
+                        child: Text('Change Email', style: TextStyle(color: Colors.blueAccent))
+                    ),
+                    Icon(Icons.arrow_forward_ios, color: Colors.blueAccent,size: 22)
+                  ]
+              ),
+              SizedBox(
+                height: he * 0.01,
+              ),
+              Divider(
+                color: Colors.grey[200],
+                thickness: 1,
+              ),
+              Row(
+                children: [
+                  Text(
+                    'Add Account',
+                    style: TextStyle(
+                      color: Colors.grey[600],
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    )
+                  ),
+                  Expanded(
+                    child: Container(),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.blueAccent,
+                    size: 21,
+                  )
+                ]
+              ),
+              SizedBox(
+                height: he * 0.01,
+              ),
+              Row(
+                children: [
+                  Text(
+                    'Switch Account',
+                    style: TextStyle(
+                      color: Colors.grey[600],
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.blueAccent,
+                    size: 21,
+                  )
+                ]
+              ),
+              SizedBox(
+                height: he * 0.01,
+              ),
+              GestureDetector(
+                onTap: () {},
+                child: Text(
+                  'Log out',
+                  style: TextStyle(
+                    color: Colors.blueAccent,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                  )
+                )
+              )
+            ],
           )
         )
       )
     );
   }
 }
+
+
+
+
+
+
+
