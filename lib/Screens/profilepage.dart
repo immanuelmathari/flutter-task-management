@@ -113,6 +113,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         height: he * 0.045,
                         width: he * 0.20,
                         child: TextFormField(
+                          keyboardType: TextInputType.name,
                             decoration: InputDecoration(
                                 contentPadding: const EdgeInsets.only(left: 10, top: 12),
                                 hintText: 'Mathari Immanuel',
@@ -164,6 +165,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         height: he * 0.045,
                         width: he * 0.25,
                         child: TextFormField(
+                          keyboardType: TextInputType.number,
                             decoration: InputDecoration(
                                 contentPadding: const EdgeInsets.only(left: 10, top: 12),
                                 hintText: '+254797952810',
@@ -215,6 +217,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         height: he * 0.045,
                         width: he * 0.25,
                         child: TextFormField(
+                          keyboardType: TextInputType.emailAddress,
                             decoration: InputDecoration(
                                 contentPadding: const EdgeInsets.only(left: 10, top: 12),
                                 hintText: 'immanuelmathari@gmail.com',
