@@ -32,7 +32,7 @@ class _DatePickerState extends State<DatePicker> {
           padding: const EdgeInsets.only(right: 10, left: 10, bottom: 10, top: 25),
           margin: const EdgeInsets.symmetric(horizontal: 0.8),
           decoration: BoxDecoration(
-            color: selectedDay == index ? Colors.grey.withOpacity(0.3) : null;
+            color: selectedDay == index ? Colors.grey.withOpacity(0.3) : null
           ),
           child: Column(
             children: [
