@@ -22,7 +22,7 @@ class TaskTimeline extends StatelessWidget{
                   detail['time'],
                   style: TextStyle(color: Colors.grey, fontSize: 15),
                 ),
-                detail['title'].isNotEmpty ? _buildCard(detail['bgColor'], detail['title'], detail['slot'])
+                detail['title'].isNotEmpty ? _buildCard(detail['bgcolor'], detail['title'], detail['slot'])
                     : _buildCard(Colors.white, '' , '')
               ]
             )
@@ -59,11 +59,11 @@ class TaskTimeline extends StatelessWidget{
             )
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(left: 20, top: 5),
             child: Text(
               slot,
               style: TextStyle(
-                color: Colors.grey.shade600,
+                color: Colors.black54,
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
               )

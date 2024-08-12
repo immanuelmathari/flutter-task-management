@@ -34,14 +34,14 @@ class DetailPage extends StatelessWidget {
               )
             )
           ),
-          detailList == null ? SliverFillRemaining(
+          detailList == null || detailList.isEmpty ? SliverFillRemaining(
             child: Container(
               color: Colors.white,
               height: 200,
               child: Center(
                   child: Text('No tasks yet', style: TextStyle(fontSize: 20, color: Colors.grey.shade500))
               )
-            )
+            ),
           ) : SliverList(delegate: SliverChildBuilderDelegate((context, index) => TaskTimeline(detailList[index]), childCount: detailList.length ))
         ]
       )
@@ -70,7 +70,7 @@ class DetailPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Text(
-              '${task.title}',
+              '${task.title} Task',
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,

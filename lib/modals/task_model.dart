@@ -19,7 +19,7 @@ class Task {
       this.iconColor,
       this.btnColor,
       this.left,
-        this.desc,
+      this.desc,
       this.done,
       this.isLast = false});
   static List<Task> generateTasks() {
@@ -31,41 +31,6 @@ class Task {
           iconColor: kBlueDark,
           btnColor: kBlue,
           left: 5,
-          desc: [{
-            'Time' : '10.00 AM',
-            'title' : 'Create a video',
-            'slot' : '9:00 Am - 10:00Am',
-            'tlColor' : kRedDark,
-            'bgcolor' : kRedLight
-          }, {
-            'Time' : '10.00 AM',
-            'title' : 'Watching a movie',
-            'slot' : '10:00 Am - 11:00Am',
-            'tlColor' : kRedDark,
-            'bgcolor' : kRedLight
-          },
-          {
-            'Time' : '11.00 AM',
-            'title' : 'Medi',
-            'slot' : '',
-            'tlColor' : kRedDark,
-            'bgcolor' : kRedLight
-          },
-            {
-              'Time' : '12.00 AM',
-              'title' : 'Go to the Gym',
-              'slot' : '12:00 Am - 1:00Am',
-              'tlColor' : kRedDark,
-              'bgcolor' : kRedLight
-            },
-            {
-              'Time' : '1.00 PM',
-              'title' : 'Metting with client',
-              'slot' : '1:00 Pm - 3:00Pm',
-              'tlColor' : kRedDark,
-              'bgcolor' : kRedLight
-            }
-          ],
           done: 3,
           isLast: true),
       Task(
@@ -76,6 +41,42 @@ class Task {
           btnColor: kBlue,
           left: 5,
           done: 3,
+
+          desc: [{
+            'time' : '10.00 AM',
+            'title' : 'Create a video',
+            'slot' : '9:00 Am - 10:00Am',
+            'tlColor' : kRedDark,
+            'bgcolor' : kRedLight
+          }, {
+            'time' : '10.00 AM',
+            'title' : 'Watching a movie',
+            'slot' : '10:00 Am - 11:00Am',
+            'tlColor' : kRedDark,
+            'bgcolor' : kRedLight
+          },
+            {
+              'time' : '11.00 AM',
+              'title' : 'Medi',
+              'slot' : '',
+              'tlColor' : kRedDark,
+              'bgcolor' : kRedLight
+            },
+            {
+              'time' : '12.00 AM',
+              'title' : 'Go to the Gym',
+              'slot' : '12:00 Am - 1:00Am',
+              'tlColor' : kRedDark,
+              'bgcolor' : kRedLight
+            },
+            {
+              'time' : '1.00 PM',
+              'title' : 'Metting with client',
+              'slot' : '1:00 Pm - 3:00Pm',
+              'tlColor' : kRedDark,
+              'bgcolor' : kRedLight
+            },
+          ],
           isLast: false),
       Task(
           icon: Icons.work,
